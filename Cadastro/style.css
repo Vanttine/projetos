@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border: none;
+    color: #323232;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+body {
+   padding-top: 5vh;
+
+
+    background-image: url(imagens/pordosol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    
+}
+
+#mainconteiner {
+    background-color: white;
+
+    max-width: 600px;
+    max-height: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+#mainconteiner h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+a {
+    color: blueviolet;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 85%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 50%;
+    padding: 0px 10px 10px 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px;
+    border-color: #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 30px;
+    border-bottom-style: groove;
+}
+
+input:focus {
+    border-color: rgb(153, 50, 204);
+}
+
+input[type="submit"] {
+    background-color: rgb(43, 80, 226);
+    border-radius: 15px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+
+    margin: auto;
+    height: 40px;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+input:hover {
+    border-color: rgb(153, 50, 204);
+}
+
+#agreement {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+span#span {
+    font-size: 11px;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+}
