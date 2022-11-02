@@ -1,4 +1,6 @@
 # projetos
  Meus projetos pessoais.
 
-<a href="C:\Users\felli\OneDrive\Documentos\Estudos\projetos\Cadastro">Cadastro</a>
+<link rel="stylesheet" href="style.css">
+
+<a href="https://vanttine.github.io/projetos/Cadastro/?name=&lastename=&email=&number=&cpf=" id="ml">Projeto "Cadastro"</a>
