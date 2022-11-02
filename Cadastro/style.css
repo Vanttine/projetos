@@ -21,11 +21,14 @@ input:focus, label:focus {
 body {
    padding-top: 5vh;
 
-
     background-image: url(imagens/pordosol.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -150px;
+    background-attachment: fixed;
+    background-position: center;
+
+    /* min-height: 540px;
+    max-height: 1290px; */
     
 }
 
@@ -38,7 +41,8 @@ body {
     margin-right: auto;
     padding: 25px;
 
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #mainconteiner h1 {
@@ -94,7 +98,7 @@ input[type="submit"] {
 
     margin: auto;
     height: 40px;
-    width: 100%;
+    width: 80%;
 
     cursor: pointer;
 }
@@ -112,7 +116,41 @@ span#span {
     font-size: 11px;
 }
 
-.error-validation {
-    color: #ff1a1a;
-    position: absolute;
+.footerconteiner {
+    margin: auto;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.701);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
+.rodape {
+    width: 350px;
+    height: 25px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    margin: auto;
+
+}
+
+footer > p {
+  padding: 5px 5px 0px 5px;
+  width: 315px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+}
+
+footer > p > a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(137, 43, 226, 0.755);
+}
+
