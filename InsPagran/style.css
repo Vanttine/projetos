@@ -15,20 +15,19 @@ body {
     font-family: Helvetica, sans-serif;
     border: none;
     color: #ffffff;
-    width: 100%;
-    
-
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 div#mainconteiner {
 
-    max-width: 420px;
-    height: 552px;
+    max-width: 455px;
+    max-height: 1020px;
 
-    padding: 50px;
+    padding: 20px 20px 7px 20px;
     margin: auto;
     
-    background-color: white;
+    background-color: rgb(250, 247, 247);
 }
 
 h1 {
@@ -191,5 +190,9 @@ input:focus {
 .lastconteiner > p > a {
     text-decoration: underline;
     color: #32749f;
+}
+
+.bluebox {
+    margin: 7px 10px 7px 10px;
 }
 
