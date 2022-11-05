@@ -1,38 +1,46 @@
 @charset "UTF-8";
 
 @font-face {
+
     font-family: 'Sunflower';
     src: url('Sunflower') format('OpenType');
     font-weight: normal;
     font-style: italic;
 }
 body {
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     border: none;
-    color: #323232;
+    color: #ffffff;
     width: 100%;
     
 
 }
 
 div#mainconteiner {
+
     max-width: 420px;
     height: 552px;
+
     padding: 50px;
     margin: auto;
-
+    
     background-color: white;
 }
 
 h1 {
+
     font-family: 'Sunflower';
     text-align: center;
+
+    color: #323232;
 }
 
 img#logoinsta {
+
     display: flex;
     
     margin: auto;
@@ -40,9 +48,11 @@ img#logoinsta {
 
     width: 174px;
     height: 50px;
+
 }
 
 img#logoface {
+
     width: 15px;
     height: 15px;
     
@@ -50,10 +60,10 @@ img#logoface {
 
     padding-right: 5px;
 
-
 }
 
 .firstt {
+
     color: #3232329d;
     font-weight: bold;
     text-align: center;
@@ -64,13 +74,17 @@ img#logoface {
     
     margin: auto;
     padding: 20px 0px 20px 0px;
+
 }
 
 p#nobottom {
+
     padding-bottom: 0px;
+
 }
 
 p#botaoface {
+
     background-color: #0095F6;
     color: white;
     display: flex;
@@ -85,9 +99,11 @@ p#botaoface {
     padding: 7px 0px 7px 0px;
 
     border-radius: 5px;
+
 }
 
 p#secondt {
+
     display: flex;
     margin-bottom: 5px;
     text-align: center;
@@ -96,9 +112,11 @@ p#secondt {
     color: #3232329d;
     padding: 10px 0px 5px 0px;
     margin: auto;
+
 }
 
 p#thirtt {
+
     display: flex;
     margin-top: 5px;
     text-align: center;
@@ -107,6 +125,7 @@ p#thirtt {
     width: 280px;
     padding: 5px 0px 15px 0px;
     margin: auto;
+    
 }
 
 
