@@ -21,6 +21,7 @@ body {
 
 div#mainconteiner {
 
+    
     max-width: 455px;
     max-height: 1020px;
 
@@ -103,7 +104,6 @@ p#botaoface {
 
 p#secondt {
 
-    display: flex;
     margin-bottom: 5px;
     text-align: center;
     font-size: 12px;
@@ -116,7 +116,6 @@ p#secondt {
 
 p#thirtt {
 
-    display: flex;
     margin-top: 5px;
     text-align: center;
     font-size: 12px;
@@ -124,7 +123,7 @@ p#thirtt {
     width: 280px;
     padding: 5px 0px 15px 0px;
     margin: auto;
-    
+   
 }
 
 
@@ -150,24 +149,26 @@ form {
 }
 
 input {
-    
-    border-top: 0px;
-    border-left: 0px;
-    border: 0.5px;
+
+    display: block;
+
+    border: 0px 0px 1px 0px;
     border-color: #323232c4;
+    border-style: none;
     border-bottom-style: groove;
-
     padding: 10px;
-    margin-bottom: 30px;
-
+    margin: 15px;
     font-size: .8rem;
    
-    
 }
 
+input:hover {
+    border-color: #3fb0fb;
+}
 
-input:focus {
-    border-color: rgb(153, 50, 204);
+input:focus { 
+    outline: none;
+    border-color: #3fb0fb;
 }
 
 .full-box {
@@ -187,7 +188,13 @@ input:focus {
     color: #323232;
 }
 
-.lastconteiner > p > a {
+.ap {
+    color: #323232df;
+    text-decoration: none;
+}
+
+
+#register {
     text-decoration: underline;
     color: #32749f;
 }
