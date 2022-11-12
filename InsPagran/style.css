@@ -102,6 +102,12 @@ p#botaoface {
 
 }
 
+#registro {
+    justify-content: center;
+    margin-left: auto;
+    padding-bottom: 13px;
+}
+
 p#secondt {
 
     margin-bottom: 5px;
@@ -153,11 +159,11 @@ input {
     display: block;
 
     border: 0px 0px 1px 0px;
-    border-color: #323232c4;
+    border-color: #3232328f;
     border-style: none;
     border-bottom-style: groove;
     padding: 10px;
-    margin: 15px;
+    margin: 10px;
     font-size: .8rem;
    
 }
@@ -172,6 +178,7 @@ input:focus {
 }
 
 .full-box {
+    
     border: 0px 0px 1px 0px;
 }
 
