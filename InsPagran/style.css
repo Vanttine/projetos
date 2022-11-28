@@ -90,7 +90,7 @@ p#botaoface {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    width: 75%;
+    width: 340px;
     padding-top: 20px;
     margin: auto;
 
@@ -135,7 +135,7 @@ p#thirtt {
 
 input[type="submit"] {
     background-color: #0095F6;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     border: none; 
 
@@ -149,6 +149,7 @@ input[type="submit"] {
 }
 
 form {
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -178,7 +179,7 @@ input:focus {
 }
 
 .full-box {
-    
+
     border: 0px 0px 1px 0px;
 }
 
