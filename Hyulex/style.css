@@ -7,6 +7,7 @@
     --color4: #BF9A84;
     --color5: #343232b7;
     --color6: #292a30;
+    --color7: #101026;
 }
 
 * {
@@ -16,50 +17,94 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    background-image: linear-gradient(to bottom, #292a30, #343232b7); 
+}
+
 .navbar {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 10vh;
-    background-color: var(--color6);
-    position: absolute;
+    display: flex;
+    min-height: 70px;
+    padding: 0 34px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* color: var(--color2); */
+    color: #1d1d78;
+}
+
+.navmenu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.5);
+    gap: 60px;
 }
 
-h3 {
-    padding: 1em;
-    color: var(--color1);
-    letter-spacing: 3px;
-    text-decoration: line-through;
-}
-
-ul, li {
-    list-style: none;
-    display: flex;
-    padding: 1em;
-    margin: 0px;
+a {
+    text-decoration: none;
+    /* color: var(--color1); */
+    
+    font-weight: 600;
 }
 
 li {
-    cursor: pointer;
-    transition: all .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    list-style: none;
+    
+}
+
+.navlink {
+    color: grey;
+    border-radius: 20px;
     margin: 0.5em;
-    padding: 10px 15px;
-    color: var(--color2);
-    border-radius: 15px;
+    padding: 2px 8px;
+    transition: 1s ease;
 }
 
-li:hover {
-    background-color: var(--color5);
-    box-shadow: 7px 5px 15px;
-    text-decoration: underline;
-}
-
-li a {
-    text-decoration: none;
+.navlink:hover {
     color: var(--color2);
 }
 
+.navlink:focus {
+    color: var(--color2);
+    background-color: var(--color7);
+}
+
+.barra {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .barra{
+        display: block;
+    }
+    .barra.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .barra.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .barra.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s;
+    }
+    .navitem {
+        margin: 16px 0;
+    }
+    .navmenu.active {
+        left: 0;
+    }
+}
